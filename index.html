@@ -28,7 +28,7 @@
     /* SECTIONS */
     section { display: none; min-height: calc(100vh - 80px); padding: 80px 30px; text-align: center; flex-direction: column; align-items: center; }
     section.active { display: flex; animation: fadeSlideUp 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
-    #home, #download, #whats-new { justify-content: flex-start; }
+    #home, #download, #plants, #lawns, #zombies { justify-content: flex-start; }
 
     @keyframes fadeSlideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
 
@@ -73,10 +73,9 @@
     .updates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 40px; padding-bottom: 70px; }
     .updates-item { background: linear-gradient(145deg, rgba(20, 15, 25, 0.8), rgba(10, 15, 12, 0.95)); border-radius: 24px; padding: 40px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(236, 72, 153, 0.2); border-top: 1px solid rgba(16, 185, 129, 0.6); border-left: 1px solid rgba(236, 72, 153, 0.6); box-shadow: 0 0 35px rgba(236, 72, 153, 0.25); transition: transform 0.4s ease, box-shadow 0.4s ease; display: flex; flex-direction: column; align-items: center; }
     .updates-item:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 0 60px rgba(16, 185, 129, 0.6); border-color: rgba(52, 211, 153, 0.8); }
-    .updates-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 18px; margin-bottom: 30px; background: rgba(0,0,0,0.5); padding: 20px; box-shadow: inset 0 0 20px rgba(16, 185, 129, 0.3); }
-    .updates-item h3 { color: #ffffff; font-size: 26px; font-weight: 800; margin-bottom: 15px; text-shadow: 0 0 10px rgba(236, 72, 153, 0.6); }
-    .updates-item p { color: #a7f3d0; font-weight: 700; font-size: 16px; background: rgba(16, 185, 129, 0.15); padding: 10px 20px; border-radius: 35px; border: 1px solid rgba(236, 72, 153, 0.4); box-shadow: 0 0 15px rgba(236, 72, 153, 0.3); }
-
+    /* Removed margin-bottom since there's no text below it now */
+    .updates-item img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 18px; background: rgba(0,0,0,0.5); padding: 20px; box-shadow: inset 0 0 20px rgba(16, 185, 129, 0.3); }
+    
     footer { text-align: center; font-size: 14px; opacity: 0.8; padding: 30px; color: #ec4899; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; border-top: 1px solid rgba(16, 185, 129, 0.3); text-shadow: 0 0 10px rgba(236, 72, 153, 0.5); }
 
     /* MOBILE */
@@ -110,7 +109,9 @@
     <div class="menu">
       <button onclick="showPage('home')">Home</button>
       <button onclick="showPage('download')">Download</button>
-      <button onclick="showPage('whats-new')">What's New</button>
+      <button onclick="showPage('plants')">Plants</button>
+      <button onclick="showPage('lawns')">Lawns</button>
+      <button onclick="showPage('zombies')">Zombies</button>
     </div>
   </nav>
 
@@ -130,36 +131,877 @@
     </div>
   </section>
 
-  <section id="whats-new">
+  <!-- PLANTS SECTION -->
+  <section id="plants">
     <div class="updates-container">
-      <h2>What's New</h2>
-      <p class="desc" style="max-width: 100%; margin-bottom: 40px;">Check out the newest free-to-use assets created by the community!</p>
+      <h2>Plants</h2>
       <div class="updates-grid">
-        
+        <!-- PLANTS_GRID_START -->
         <div class="updates-item">
-          <img src="pigeonfeeder.png" alt="Pigeon Feeder">
-          <h3>Pigeon Feeder</h3>
+          <img src="big images/plants/beeshooter.png" alt="">
         </div>
-        
         <div class="updates-item">
-          <img src="bitterlime.png" alt="Bitter Lime">
-          <h3>Bitter Lime</h3>
+          <img src="big images/plants/almanac icon.png" alt="">
         </div>
-        
         <div class="updates-item">
-          <img src="vikinghollows.png" alt="Viking Hollows">
-          <h3>Viking Hollows</h3>
+          <img src="big images/plants/almanac icon_1.png" alt="">
         </div>
-        
+        <div class="updates-item">
+          <img src="big images/plants/icequeenpea.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/CrappyGourd_20260322195834.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/3023_sin_titulo_20260322183731.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/CrappyGourd_20260322195853.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/CrappyGourd_20260322195844.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Dogwood_Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/pecanolith.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/almanac icon (based off fire pea).png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/charcoalpeashooter.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/charcoalpeashooter_charcoal.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/sweetpea.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/almanac icon_2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/443_sin_titulo_20260109185232.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/megagatlingpuff_custom1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/megagatlingpuff.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/almanac icon_3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Untitled29_20250923123956.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Untitled29_20250923123946-1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/603_sin_titulo_20250228145740.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/seedpacketicon.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/GoldMagnet.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Untitled7_20250827111658.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/200_sin_titulo_20251108121147.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/gothtail.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/unused_1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/HD_Cattail_PvZ2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/unused_3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/dropletpea.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/seedpacket Icon.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/iceshroom.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/HD_Plucky_Clover_PvZ2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/552_sin_titulo_20241108105243.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/119_sin_titulo_20241207135429.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/unused_2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/ice_sunflower.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Columbreeze.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/endy678.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/abraham20555.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/ICE-shroom.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/ICE-shroom_explosion.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/468_sin_titulo_20240927105708.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/seedpacket.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/magic_pea_render_thing.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Untitled842_20260505230133.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Goo-sunflower.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Ninjapple_Retreat_HDRender_1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/Ninjapple_HDRender.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/plantern.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/OnionRings.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/seedpacket icon_4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/800px-Plant_gatlingpea_avatar_party.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/GatlingPea.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/plants/HD_Gatling_Pea_Super_Costume.png" alt="">
+        </div>
+        <!-- PLANTS_GRID_END -->
+      </div>
+    </div>
+  </section>
+
+  <!-- LAWNS SECTION -->
+  <section id="lawns">
+    <div class="updates-container">
+      <h2>Lawns</h2>
+      <div class="updates-grid">
+        <!-- LAWNS_GRID_START -->
+        <div class="updates-item">
+          <img src="big images/lawn/FutureNight.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/WW_N.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/963_Sem_Titulo_Restaurado2_20251218140425.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/swinger lawn final5_20250601194224.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/Tak_berjudul155_20260718181045.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/Tak_berjudul155_20260718180629.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/BWB_N.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/meow.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/prateseasnght.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/Space.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/CM_D(1).png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/CM_N(1).png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/lawn/Untitled4_20250125114506.png" alt="">
+        </div>
+        <!-- LAWNS_GRID_END -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ZOMBIES SECTION -->
+  <section id="zombies">
+    <div class="updates-container">
+      <h2>Zombies</h2>
+      <div class="updates-grid">
+        <!-- ZOMBIES_GRID_START -->
+        <div class="updates-item">
+          <img src="big images/zombie/dark_falseknight.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled1784_20241208081118.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled1751_20241204193125.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Veteran_Zombie_King.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/dark_wizard_4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Alt_Dark_Basic.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/dark_wizard_5.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/18_sin_titulo_20241218124243.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lostcity_jane_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lostcity_excavator_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zcorp_consultant_veteran2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zcorp_consultant_veteran1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Image-244.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/8bit_basic04.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Neonette.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/monje_borracho_veterano_20241215205924.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/prosector_veteran_v2_deactivated.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/prosector_veteran_v2_after_explosion.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/prosector_veteran_v2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Cowgirl Zombie Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Cart-Head Cowgirl Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Conehead Cowgirl Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Buckethead Cowgirl Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Zombie_Crow.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Bandit_Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Bomb_Bandit_Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Sun_Bandit_Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/west_tacochampion.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Yeehaw.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled34_20250924075853.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled34_20250923224146.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled34_20250924075856.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled34_20250924075900.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/iceage_hunter_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/iceage_troglobite_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_iceage_vet_flag.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Iceage_basic05.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/iceage_weaselhoarder_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Fat-Weasel.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/rollingstone.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Primal_Pole_Vaulting_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_jurrasic_torch_unlit.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_jurrasic_torch.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/65_sin_titulo_20250107215159.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_bombthrower.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/1591_sin_titulo_20240430211938.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/500_sin_titulo_20241010122051.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_lass.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Jolly_Lass_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_lass_armor1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_lass_armor2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_lass_flag.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/pirate_lass_armor4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/584_sin_titulo_20241117154555.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Yarr_20260506095119.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/570_sin_titulo_20241113072226.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/645_sin_titulo_20241207214014.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/532_sin_titulo_20241030170518.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/[HD Render] Centurion Zombie w_ Armor.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/[HD Render] Centurion Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/hdrender.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Regular.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/CarnieRakugo.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_Coffin3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Pogo Nut.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_allstar_fnord.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/imageedit_24_6034353745.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SuperFanImp_Veteran_Benny_Take.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-popsy-conehead.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-brickhead-updated.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-popsy-buckethead.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-popsy-brickhead-updated.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-popsy.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-buckethead.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/duckytube-conehead.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_pigeonfeeder.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_pigeonfeeder_dove.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_pigeonfeeder_dove_grey.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_pigeonfeeder_dove_blue.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_blitzer.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_modern_balloon_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Odyssey_Girl_Scouts_Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_5.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SuperFanImp_Veteran_Benny_Take_6.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/modern_allstar_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Modern_Jetpack_Zombie_20250124202507.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Modern_Jetpack_Zombie_20250112204513.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Screen_Door_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image2_7.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_8.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled1185_20240925092617.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/PopsyConeheadZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/PopsyBrickheadZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/LassieRallyZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/LassieFlagZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/PopsyBucketheadZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/PopsyZombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/PopsyZombieHDRender.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Render1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_future_basics_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_future_rally.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Deflector_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/future_jetpack_veteran_purple.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/future_technican2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/future_technican.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beta3.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/beta1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beta6.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beta4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beta5.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beta2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Thoth.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Tomb Shover Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_egypt_basic_female1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_egypt_basic_female4.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_egypt_basic_female2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_egypt_basic_female.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zomboss_custom_egypt.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Zomboss-Sphinx-inator.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/69_sin_titulo_20241106135532.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/egypt_supervisor.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/egypt_supervisor_sarcophagus.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image-15.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image-11.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image-27.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image-12.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image-18.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/egypt_vet_cursedologist.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/1024px-Pistol_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled948_20260517001717.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Greaser-Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled2437_20250611112909.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Beach Brick.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Female Brick.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Untitled2370_0000-00-04_20250525082758.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/beach_snorkeler_veteran.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/ShrekFestBucket.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/ShrekFestFlag.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/ShrekFestCone.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/ShrekFestBrick.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/ShrekFestBasic.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Sportzball_Jester_Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Lawnbowl Zombie Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Lawnbowl Buckethead Zombie Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Lawnbowl Trophyhead Zombie Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Spring_Popsy_No_Bunny.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Spring_Popsy.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/BirthdayZ_Imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Abbie_Jetpack_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Bday_Cone.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/652_sin_titulo_20241212150516.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/613_sin_titulo_20241211074106.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/cone.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/bucket.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Conehead Electric Boogaloo Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Electric Boogaloo Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Buckethead Electric Boogaloo Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_9.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SwingerBasic Final_20240502224645.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SwingerBasic_20240422203342.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SwingerBasic Armors_20240501213846.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SwingerBasic Armors_20240501213821.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/SwingerBasic Armors2_20250615234230.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Gargantuar_Mafia_20250723143240.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Summer_Rockpuncher_20241026132935.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image2_10.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_11.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_crimson_flag.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_crimson_basic.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lunar_camel.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/fireroosterHDRender2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/fireroosterHDRender1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lunar_imp.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lunar_garg.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lny_cannon2.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lny_cannon1.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Lunar Newspaper Zombie Render.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Tricky_Zombie_Sign.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Tricky_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/HD_Devilish_Swashbuckler.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Pomni_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Halloween Pumpkin-Head Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/image_12.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Evil_Pomni_Zombie.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Image-253.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/zombie_lost_titanic_basic.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/bnnuy garg hd.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/LATAM_zombie_brickethead_20250228155512.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/314_sin_titulo_20250228125333.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/1623_sin_titulo_20240616134718.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/LATAM_zombie_buckethead_20250228161429.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/593_Sem_Titulo2_20241229164235.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/593_Sem_Titulo2_20241229164246.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/593_Sem_Titulo2_20241229164224.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/593_Sem_Titulo2_20241229164231.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/lebob.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/fool_sunflower.png" alt="">
+        </div>
+        <div class="updates-item">
+          <img src="big images/zombie/Bonnie_Zombie.png" alt="">
+        </div>
+        <!-- ZOMBIES_GRID_END -->
       </div>
     </div>
   </section>
 
   <footer>
-    <div style="margin-bottom: 20px;">
+    <div>
       <img src="https://api.visitorbadge.io/api/visitors?path=sparks.community&countColor=%23ec4899&labelColor=%2310b981&label=VISITORS" alt="Website Visitors">
     </div>
-    © All rights reserved to Lunutics
   </footer>
 
   <script>
